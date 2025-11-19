@@ -1,0 +1,11 @@
+import mycal
+x=int(input("enter the frist number: "))
+y=int(input("enter the second number: "))
+sum=mycal.add(x,y)
+subtract=mycal.sub(x,y)
+multplication=mycal.mul(x,y)
+division=mycal.div(x,y)
+print("sum =", sum)
+print("substraction =", subtract)
+print("multipication =", multplication)
+print("division =", division)
