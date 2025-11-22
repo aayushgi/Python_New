@@ -8,7 +8,7 @@ elif x<0 and y>0:
     print("The point lies in the Second Quadrant")
 elif x<0 and y<0:
     print("The point lies in the Third Quadrant")
-elif x>0 and y<0:
+elif x>0 and y<~0:
     print("The point lies in the Fourth Quadrant")
 else:
     print("The point lies on the Axis")    

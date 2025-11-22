@@ -7,4 +7,3 @@ print(X)
 print(type(X))
 Y=('softpro')
 print(y)
-#no changes will apply
