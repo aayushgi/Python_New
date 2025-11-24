@@ -5,6 +5,6 @@ def serach(l,n):
 	for i in range(le):
 		if (l[i]==n):
 			return 1
-	return false
-lt=[3, 42, 55, 65, 85, 33]
+	return (false) 
+lt = [3, 42, 55, 65, 85, 33]
 print(search(lt, 42))
