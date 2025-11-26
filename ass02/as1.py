@@ -6,6 +6,7 @@ for i in range(0,10):
 	n=int(input())
 	list.append(n)
 print(list)
+sum=0#we have to frist declear the sum = 0
 for i in range(0,10):
-	sum = sum+list[i]
+	sum=sum+list[i]
 print("sum of the elements of the list", sum)
