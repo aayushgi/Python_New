@@ -8,3 +8,4 @@ while n>0:
 	temp=temp*10+rem
 	n=n//10
 print("the reverse of the",num,"is",temp)
+#no changes
