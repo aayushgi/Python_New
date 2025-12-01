@@ -9,3 +9,4 @@ class table:
 			
 ft=table()
 t=ft.tab()
+   
