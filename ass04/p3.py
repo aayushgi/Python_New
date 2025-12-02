@@ -13,7 +13,7 @@ print("enter the numbers here: ")
 for i in range(10):
 	numbers.append(int(input()))
 input=int(input("enter the value you want to search: "))
-answer=search(numbers,value)
+answer=search(numbers,input)
 if answer == False:
 	print("not present in the list")
 else:
