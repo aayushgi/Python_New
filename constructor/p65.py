@@ -8,7 +8,7 @@ class Bank:
 		return(self.balance+self.dipo)
 	def withdraw(self,w):
  		if self.balance>=w:
-			self.withdraw = w
+	       self.withdraw = w
 			return(self.balance-self.withdraw)
 		else:
 			return "wrong"

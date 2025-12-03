@@ -1,0 +1,6 @@
+employee id113
+employee name: 23
+employee salary: 34
+employee id122
+employee name: sdd
+employee salary: 23
