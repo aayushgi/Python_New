@@ -6,3 +6,4 @@ class child(parent):
 		super().__init__()
 		print("this is child constructor")
 obj=child()
+##no changes
