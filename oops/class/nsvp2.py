@@ -1,3 +1,7 @@
+##non static variable 
+
+
+
 class employee:
     def setValue(self, empid,empname,emapsal):
         self.empid=empid
