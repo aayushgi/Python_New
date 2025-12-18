@@ -1,4 +1,5 @@
 ##non static variable 
+#this program is about how we are creating an non satatic variables
 
 
 
@@ -8,7 +9,7 @@ class employee:
         self.empname=empname
         self.empsal=emapsal
     def display(self):
-        print("Employee ID: ", self.empid)
+        print("Employee ID: ", self.empid)#we have to write same as we write in set value block
         print("Employee name: ", self.empname)
         print("Employee salary: ", self.empsal)
 e=employee()#object creation
