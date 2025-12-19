@@ -27,3 +27,5 @@ d=float(input("enter your DA here: "))
 ps=payslip()
 ps.setEmployee(eid, ename)
 ps.setpayroll(b,h,d)
+#NO COMMENTSw we will get all the details
+ps.getEmployee()
