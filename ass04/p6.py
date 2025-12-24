@@ -7,3 +7,4 @@ def factorial(n):
 num=int(input("enter the number to find the factorial: "))
 print("factorial of ",num, "is", factorial(num))
 #no changes needed
+#no changes needed
