@@ -18,3 +18,4 @@ emane=input("enter your name here: ")
 esal=float(input("enter your salary here: "))
 e.setValue(eid, emane, esal)
 e.display()#function calling    
+#no need to write self here because we are calling by object e
