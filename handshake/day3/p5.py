@@ -20,3 +20,4 @@ is_raining = False
 if not is_raining:
     print("It's a sunny day, go outside!")  
 #if it is not raining, then it is a sunny day
+#no changes 
