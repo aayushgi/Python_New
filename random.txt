@@ -1,1 +1,6 @@
-#wap to check the number is 
+1.take a list of number and find largest and smallest num. without using built in function
+2. take a list of int. and count many are +ve , -ve 
+3.take a list names and print name starting with vowels 
+4.take a list of number and remove duplicate using loop
+5.take a list of num. and check num. is palendrom or not
+6. count the frequency of each charator in strin using dictonary
