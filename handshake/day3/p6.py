@@ -1,0 +1,8 @@
+""""PS C:\spi\random program> git push origin master
+>>
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\spi\random program>"""""
