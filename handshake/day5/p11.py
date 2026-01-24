@@ -7,3 +7,8 @@ employee_info(
     name="sarita"
 
 )
+employee_info(
+    name="ayhgs",
+    id=24343435,
+    saary=200000,
+)
