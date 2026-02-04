@@ -1,0 +1,23 @@
+task1
+    create database mydb;
+
+    
+    create table student(
+        rollno int primary key,
+        name varchar(50),
+        branch varchar(30),
+        fee int 
+    );
+
+
+
+task2
+insert into student values(1001,'rohit','CS',12000),(1002,'mohit',CS,12000),(1003,'sobhit','IT',15000),(1004,'mohit','IT',15000);
+
+
+
+task3
+select * from student;
+select rollno, name, branch from student;
+select * from student where branch=IT;
+select * from student whwre 

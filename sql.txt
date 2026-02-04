@@ -1,0 +1,71 @@
+where clause: used to specify condition in sql query
+1)select record of employee with empid 1001
+	select * from employee where empid=1001;
+
+2)select empid,empname from employee table with empid 1001
+    select empid, empname from employee whre empid=1001
+
+DELETE:it is used to delete record from table
+syntax:
+    delete from <table name> where <condition>
+    eg:
+        delete record from employee table with empid1001
+        delete from employee where empid=1001;
+
+UPDATE:used to modify record of table
+syntax:
+    update <table_name> set <column_name>=<value>, <column_name>=<value> whre <condition>;
+    e.g
+        update employee set salary=60000 whre empid=1002;
+
+
+TRUNCATE:used to delete all record from table but structure remains
+syntax:
+    truncate table<table_name>;
+    e.g
+        truncate table employee;
+
+DROP:it is used to delete database object
+syntax:
+    drop table<table_name>
+    eg:
+        drop table employee;
+
+
+ALTER:it is used to modify structure of database object
+
+create table login
+(
+    userid varchar(50) primary key,
+    password varchar(50)
+);
+
+1.use of alter command to add a new column
+syntax:
+    alter table <table_name> add <column_name> <data_type>
+    eg:
+        alter table login add usertype varchar(50);
+
+2. use of alter command to drop a column
+syntax:
+    alter table<table_name> drop column <column_name>
+    eg  
+        alter table login drop column usertype;
+
+3.use of alter command to modify column
+syntax:
+    alter table <table_name> modify <column_name> <new_data_type>;
+    eg:
+        alter table login modify password varchar(30);
+
+4.use of alter command to rename the column
+syntax:
+    alter table <table_name> change <column_old_name> <column_new_name> <data_type>;
+    eg:
+        alter table  login change password pwd varchar(30);
+
+5.use of alter command to add new column after a given column
+syntax:
+    alter table <table_name> add <new_column_name> <data_type> after <given_column_name>;
+    eg:
+        alter table login add usertype varchar(50) after userid;        
