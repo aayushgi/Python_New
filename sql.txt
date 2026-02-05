@@ -16,7 +16,7 @@ UPDATE:used to modify record of table
 syntax:
     update <table_name> set <column_name>=<value>, <column_name>=<value> whre <condition>;
     e.g
-        update employee set salary=60000 whre empid=1002;
+        update employee set salary=60000 where empid=1002;
 
 
 TRUNCATE:used to delete all record from table but structure remains
@@ -69,3 +69,60 @@ syntax:
     alter table <table_name> add <new_column_name> <data_type> after <given_column_name>;
     eg:
         alter table login add usertype varchar(50) after userid;        
+
+
+
+
+_________________________________________________________________________________________________________
+5/feb/2026
+
+
+create table empinfo(
+    empid int primary key,
+    empname varchar(50),
+    department varchar(50),
+    salary bigint
+);
+
+insert into empinfo values(1001,'ravi singh','devlopment',500000);
+insert into empinfo values(1002,'priya singh','HR',600000);
+insert into empinfo values(1003,'ajay mishra','devlopment',550000);
+insert into empinfo values(1004,'aman singh','testing',450000);
+
+ORDER BY:used to sort records of table in ascending or descending order 
+
+1)sort empinfo table in ascending order based on empname
+select * from empinfo order by empname;
+2)sort empinfo table in descending order based on empname
+select * from empinfo order by empname desc;
+
+SQL OPERATORS:
+Arithmatic operators:
++ addition 
+- substraction
+* multiplication
+/ division
+% modulo(to calculating remainder)
+
+comparision operators:
+> grater than
+< less than
+>= graterthan or equal
+<= lessthan equal
+= equal
+<> not equal
+
+logical operators:
+AND 
+OR 
+NOT
+
+special operators: 
+like:used to pattern matching
+select * from empinfo where empname like '%singh';
+
+between:select the values in given range
+select * from empinfo where salary between 500000 and 550000;
+
+in:in operators is used to check value in given values
+
