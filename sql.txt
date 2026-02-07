@@ -126,3 +126,88 @@ select * from empinfo where salary between 500000 and 550000;
 
 in:in operators is used to check value in given values
 
+
+_________________________________________________________________________________________________________
+7/feb/2026
+
+JOIN OPERATION: select data from two or more than two table then you can perform join operation.
+for join operation atleast one column should be same in both table.
+FORIGEN KEY: works as a primary key in another table used to establish realationship between two table
+
+table name: staff
+column name  |   data type  | constraint
+empid        |   int        | p.key
+empname      |  varchar(50) | 
+
+table name: product
+column name  |   data type  | constraint
+pid          |   int        | p.key
+pname        |  varchar(50) |
+empid        |   int        | f.key(referenced to staff)
+
+
+
+create table staff(
+    empid int primary key
+    empname varchar(50)
+);
+
+
+create table product(
+    pid int primary key,
+    pname varchar(50),
+    empid int,
+    foreign key(empid) references staff(empid)
+);
+
+
+staff 
+insert into staff values(1001,'jhon');
+insert into staff values(1002,'brown');
+insert into staff values(1003,'green');
+insert into staff values(1004,'lily');
+
+empid    |   empname
+1001     |    jhon
+1002     |    brown
+1003     |    green
+1004     |    lily
+
+product
+insert into product values(101,'printer',1001);
+insert into product values(102,'scanner',1002);
+insert into product values(103,'plotter',1002);
+insert into product values(104,'laptop',1003);
+insert into product values(105,'projector','Null');
+
+
+
+pid      |        pname     |      empid
+101      |   printer        |    1001
+102      |   scanner        |    1002
+103      |   plotter        |    1002  
+104      |   laptop         |    1003 
+105      |   projector      |    'Null'
+
+
+Natural join: when we perform this operation common records from both are display
+
+
+task: we want to select empname from staff table and pname from product table on the basis of empid
+
+select staff.empname, product.pname from staff, product where staff.empid=product.empid;
+
+LEFT JOIN:
+all records pf left table are display and matching records of right table are display
+
+select staff.empname, product.pname from staff left join product on staff.empid=product.empid; 
+
+
+Right join: all records pf right table are display and matching records of left table are display
+select staff.empname, product.pname from staff right join product on staff.empid=product.empid; 
+
+
+Full join: all records of both table are display. it is like as union of left join and right join
+select staff.empname, product.pname from staff left join product on staff.empid=product.empid 
+union
+select staff.empname, product.pname from staff right join product on staff.empid=product.empid; 
