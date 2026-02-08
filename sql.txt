@@ -150,7 +150,7 @@ empid        |   int        | f.key(referenced to staff)
 create table staff(
     empid int primary key
     empname varchar(50)
-);
+); 
 
 
 create table product(
