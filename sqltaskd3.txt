@@ -1,0 +1,57 @@
+create table spiemp(
+    emp_id int primary key,
+    emp_name varchar(50),
+    department varchar(50),
+    salary int,
+    joining_date varchar(30),
+    city varchar(40),
+    bonus int 
+
+);
+insert into spiemp values(101,'amit','IT',50000,2021-01-15,'delhi',5000);
+insert into spiemp values(102,'neha','HR',45000,2020-03-10,'noida',4000);
+insert into spiemp values(103,'Rahul','IT',60000,2019-07-22,'gurgaon',6000);
+insert into spiemp values(104,'pooja','finance',55000,2021-11-01,'delhi',4500);
+insert into spiemp values(105,'ankit','HR',48000,2021-02-18,'noida',3500);
+insert into spiemp values(106,'sneha','IT',62000,2018-09-05,'delhi',7000);
+insert into spiemp values(107,'rohit','finance',53000,2020-12-12,'gurgaon','Null');
+
+
+task1
+find total numer of employee
+select count(*)"total employee" from spiemp;
+
+
+task2
+calculating average salary of all employee
+select avg(salary)"average salary" from spiemp;
+
+
+task3
+find maximum salary in the IT department
+select max(salary) from spiemp where department='IT';
+
+
+task4
+find min. bonus recived by empname
+select min(bonus)"minimum bonus" from spiemp;
+
+
+task5
+display employee name in upper case
+select upper(emp_name)"employee " from spiemp;
+
+
+task6
+display employee name in lower case
+select lower(emp_name)"employee " from spiemp;
+
+
+task7
+display employee with 3rd largest salary
+select * from spiemp order by salary desc limit 2,1;
+
+
+task8
+display employee with 3rd minimum salary
+select * from spiemp order by salary limit 2,1;

@@ -211,3 +211,64 @@ Full join: all records of both table are display. it is like as union of left jo
 select staff.empname, product.pname from staff left join product on staff.empid=product.empid 
 union
 select staff.empname, product.pname from staff right join product on staff.empid=product.empid; 
+
+
+
+
+
+
+
+9/feb/2026
+_________________________________________________________________________________________________________
+create table student(
+    rollno int primary key,
+    name varchar(50),
+    branch varchar(50),
+    fee bigint
+);
+
+insert into student values(1001,'rohit','cs',75500);
+
+insert into student values(1002,'mohit','IT',70500);
+
+insert into student values(1003,'rachit','ME',72500);
+
+insert into student values(1004,'mudit','cs',73500);
+
+SQL FUNCTIONS: there are many built in funtion which are used in data analysis. these funtion are also called
+aggregate funtion. these funtion are used with select statment only.
+
+1)COUNT():it is used to count number of rows 
+select count(*)"no. of rows" from student;
+2)sum(): it is used to find the sum of that column
+select sum(fee)"total fee" from student;
+3)max(): this funtion is use to find the maximum of given column
+select max(fee)"maximum fee" from student;
+4)min(): this function used to find minimum of that perticular column
+select min(fee)"minimum fee" from student;
+5)avg(): used to find the average of perticular column
+select avg(fee)"average fees" from student;
+6)upper(): used to convert column string in upper case
+select upper(name)"student names" from student;
+7)lower(): this is used to convert into lower case
+select lower(student)"student name" from student;
+
+task1=write sql statment to select record with maximum fee in student table
+select * from student where fee=(select max(fee) from student);
+
+task2=write sql statment to select record with mninimum fee in student table
+select * from student where fee=(select min(fee) from student);
+
+task3=write sql statment to select record with second maximum fee
+select * from student where fee=(select max(fee) from student where fee<(select max(fee)from student));
+
+task4=write sql statment to select record with second minimum fee
+
+select * from student where fee=(select min(fee) from student where fee>(select min(fee)from student));
+
+
+task5= write sql statment to select record with 3rd maximum fee
+select * from student order by fee desc limit 2,1;
+
+task6= write sql statment to select record with 3rd minimum fee
+select * from student order by fee limit 2,1;
