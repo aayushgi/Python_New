@@ -272,3 +272,30 @@ select * from student order by fee desc limit 2,1;
 
 task6= write sql statment to select record with 3rd minimum fee
 select * from student order by fee limit 2,1;
+
+
+
+
+
+10/feb/2026
+_________________________________________________________________________________________________________
+VIEW: view is logical table which is created from another table if you perform any operation in view 
+then main table will also be affected
+
+
+create table employee2(
+    empid int primary key,
+    empname varchar(50),
+    department varchar(50),
+    salary bigint
+);
+  create view emp as select empid, empname, department from employee2;
+
+
+  insert some rows:
+  insert into emp values(1001,'rajat', 'management');
+  insert into emp values(1002,'khushi', 'devlopment');
+
+select * from emp;
+
+select * from employee2;

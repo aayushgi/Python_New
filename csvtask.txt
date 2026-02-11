@@ -1,0 +1,58 @@
+1. Show records of 'male' patient from 'southwest' region.
+
+select * from insurance where gender='male' and region='southwest';
+
+2. Show all records having bmi in range 30 to 45 both inclusive.
+
+select * from insurance where bmi >=30 AND bmi<=45; 
+
+3. Show minimum and maximum bloodpressure of diabetic patient who smokes. Make column names as MinBP and MaxBP respectively.
+
+select max(bloodpressure)"max bloodpressure" , min(bloodpressure)"minimum bloodpressure"from insurance where diabetic='yes' AND smoker='yes';
+
+
+4. Find no of unique patients who are not from southwest region.
+
+select * from insurance where region <> southwest;
+select distinct count(*)"no. of patient" from insurance where region <> 'southwest';
+
+5. Total claim amount from male smoker.
+select sum(claim)"total claim from male smoker" from insurance where gender='male' AND smoker='yes';
+
+
+6. Select all records of south region.
+select * from insurance where region='southeast' OR 'southwest';
+select * from insurance where region like 'south%';
+
+7. No of patient having normal blood pressure. Normal range[90-120]
+select count(bloodpressure)"normal BP" from insurance where bloodpressure>90 AND bloodpressure<120;
+
+
+8. What is the average claim amount for non-smoking female patients who are diabetic?
+select avg(claim)"average claim from non smoking" from insurance where gender='female' AND smoker='no' AND diabetic='no';
+
+
+9. Write a SQL query to delete all records for patients who are smokers and have no children.
+delete from insurance where smoker='no' AND children=0; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
