@@ -1,0 +1,116 @@
+question1:
+create database practicedb;
+create table userinfo(
+    Fristname varchar(30),
+    Lastname varchar(30),
+    Contactno varchar(15) primary key,
+    Emailaddress varchar(50)
+
+);
+alter table userinfo add grnder varchar(6) after Lastname; 
+alter table userinfo change grnder gender varchar(6);
+
+
+
+
+question2:
+insert into userinfo values('Brijesh' ,'Mishra', 'Male', 9453318798 ,'brijesh@gmail.com');
+insert into userinfo values('Rajat', 'Verma', 'Male', 9936652039, 'rajat@gmail.com' );
+insert into userinfo values('Nisha', 'Singh', 'Female', 9559763249, 'nisha@gmail.com' );
+insert into userinfo values('Priya' , 'Singh', 'Female', 7753001621, 'priya@gmail.com' );
+
+
+
+question3:
+a)select * from userinfo;
+b)select Fristname, Lastname , Emailaddress from userinfo;
+c)select * from userinfo where Contactno='9453318798';
+d)select * from userinfo where gender='Male';
+e)select * from userinfo where gender='Female';
+f)update userinfo set Emailaddress='brijesh.225409@gmail.com where Contactno= 9453318798;
+g)delete from userinfo where Contactno= 7753001621;
+h)truncate table userinfo;
+i)drop table userinfo;
+
+
+
+
+question4:
+create table country(
+    countryid int auto_increment primary key,
+    Countryname Varchar(100) 
+);
+
+
+create table state(
+    Stateid Int Primary Key Auto_Increment,
+    Statename Varchar(100),
+    Countryid Int,
+    foreign key(countryid) references country(countryid)
+);
+
+
+create table city(
+    Cityid Int Primary Key Auto_Increment,
+    Cityname Varchar(100),
+    Stateid int,
+    foreign key(Stateid) references state(Stateid)
+);
+
+
+
+
+question5:
+create table login_info(
+    userid int primary key,
+    passwd varchar(10) not Null
+);
+
+
+question6:
+a)alter table login_info add hint_ques varchar(30);
+b)alter table login_info drop column hint_ques;
+c)alter table login modify passwd varchar(15);
+
+
+
+question7:
+create table  EMPLOYEES(
+    Employee_id Int  Primary key,
+    Employee_Name Varchar(20) Null  
+);
+
+create table ORDERS(
+    Product_Id int  Primary key,
+    Product Varchar(20) Null,
+    Employee_id int,
+    foreign key(Employee_id) references EMPLOYEES(Employee_id)
+);
+
+
+
+
+
+question8:
+insert into EMPLOYEES values(1001, 'Karan' );
+insert into EMPLOYEES values(1002, 'Shikhar' );
+insert into EMPLOYEES values(1003, 'Rajan'  );
+insert into EMPLOYEES values(1004, 'Priya' );
+
+insert into ORDERS values(1,'Table',1001 );
+insert into ORDERS values(2,'Chair', 1002);
+insert into ORDERS values(3                                 ,'Printer  ',                                  1003);
+insert into ORDERS values(4                                 ,'Projector');
+
+
+
+
+question9:
+a)select EMPLOYEES.Employee_Name, ORDERS.Product from EMPLOYEES, ORDERS where EMPLOYEES.Employee_id=ORDERS.Employee_id;
+b)select EMPLOYEES.Employee_Name, ORDERS.Product from EMPLOYEES left join ORDERS on EMPLOYEES.Employee_id=ORDERS.Employee_id;
+c)select EMPLOYEES.Employee_Name, ORDERS.Product from EMPLOYEES right join ORDERS on EMPLOYEES.Employee_id=ORDERS.Employee_id;
+
+
+
+question10:
+export database
