@@ -1,0 +1,1 @@
+#Write generator yielding square of numbers.
