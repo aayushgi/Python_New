@@ -5,10 +5,6 @@ def to_uppercase(func):
         result=func()
         return result.upper()
     return wrapper
-
-
-
-
 @to_uppercase
 def greet():
     return "hellow"
