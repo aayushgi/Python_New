@@ -26,3 +26,5 @@ def dashboard(username,password):
 U=input("enter your valid name: ")
 P=input("enter your password: ")
 dashboard(U,P)
+
+#this is end of the program
