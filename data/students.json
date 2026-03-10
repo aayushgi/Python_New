@@ -1,3 +1,32 @@
 {
-    "students": []
+    "students": [
+        {
+            "roll": "11",
+            "name": "adarsh",
+            "class": "8",
+            "marks": {
+                "python": 78,
+                "maths": 78,
+                "DBMS": 78,
+                "OS": 78
+            },
+            "total": 312,
+            "percentage": 78.0,
+            "grade": "B+"
+        },
+        {
+            "roll": "12",
+            "name": "adil",
+            "class": "9",
+            "marks": {
+                "python": 67,
+                "maths": 67,
+                "DBMS": 67,
+                "OS": 67
+            },
+            "total": 268,
+            "percentage": 67.0,
+            "grade": "B"
+        }
+    ]
 }
