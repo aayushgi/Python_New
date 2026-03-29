@@ -1,0 +1,10 @@
+Streamlit
+open source python framework used to build interactive web applications for data science and machine learning without needing frontend skills like html,css, javascript
+its widely used for 
+ML model development
+data visualization dashboard
+streamlit provide builtin widgets
+buttons st.button()
+sliders st.slider()
+text input st.text_input()
+dropdown st.selectbox()
