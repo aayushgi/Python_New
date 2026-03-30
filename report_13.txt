@@ -1,0 +1,15 @@
+===========student report card============
+
+roll no. :13
+name :adatiya
+class :12
+
+-----------marks-------------python: 56
+maths: 56
+DBMS: 96
+OS: 69
+
+-----------------
+Total Marks : 277
+Average     : 69.25
+Grade       : B
