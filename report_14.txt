@@ -1,0 +1,15 @@
+===========STUDENT REPORT CARD============
+
+roll no. :14
+name :adil
+class :14
+
+-----------marks-------------python: 56
+maths: 56
+DBMS: 46
+OS: 48
+
+-----------------
+Total Marks : 206
+Average     : 51.50
+Grade       : C

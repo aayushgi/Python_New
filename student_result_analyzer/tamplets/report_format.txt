@@ -1,5 +1,0 @@
-this page is about the synopsis of the student result analyzer
-there is no update 
-3/21/26 
-there is change in this current file 
-all changes will apply in DSA segment

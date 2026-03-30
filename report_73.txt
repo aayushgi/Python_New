@@ -1,0 +1,15 @@
+===========STUDENT REPORT CARD============
+
+roll no. :73
+name :kartik
+class :14
+
+-----------marks-------------python: 56
+maths: 63
+DBMS: 73
+OS: 85
+
+-----------------
+Total Marks : 277
+Average     : 69.25
+Grade       : B
