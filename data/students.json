@@ -1,17 +1,17 @@
 {
     "students": [
         {
-            "roll": "3",
-            "name": "raj",
-            "class": "11",
+            "roll": "12",
+            "name": "adatiya",
+            "class": "12",
             "marks": {
-                "python": 65,
-                "maths": 65,
-                "DBMS": 52,
-                "OS": 23
+                "python": 33,
+                "maths": 23,
+                "DBMS": 56,
+                "OS": 95
             },
-            "total": 205,
-            "percentage": 51.25,
+            "total": 207,
+            "percentage": 51.75,
             "grade": "C"
         }
     ]
