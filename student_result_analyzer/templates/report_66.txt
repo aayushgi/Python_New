@@ -1,0 +1,15 @@
+===========STUDENT REPORT CARD============
+
+roll no. :66
+name :himanshu
+class :12
+
+-----------marks-------------python: 56
+maths: 45
+DBMS: 36
+OS: 63
+
+-----------------
+Total Marks : 200
+Average     : 50.00
+Grade       : C

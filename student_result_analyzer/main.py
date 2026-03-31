@@ -2,14 +2,10 @@
 import json
 import os
 students=[]
-
-
 def add_student():
     roll=input("enter roll number here: ")
     name=input("enter name here: ")
     class_name=input("enter class here: ")
-
-
     student={
         "roll":roll,
         "name":name,
@@ -30,14 +26,10 @@ def enter_marks():
             print("marks added")
             return
     print("student not found") 
-
-
 def compute_result():
     for s in students:
         total=sum(s["marks"].values())
         percentage=total/len(s["marks"])   
-
-
         if percentage>=90:
             grade="A+"
         elif percentage>=80:
@@ -59,7 +51,6 @@ def compute_result():
         s["grade"]=grade
     print("result calculated")
 
-
 def search_by_grade(grade):
     found=False
     for s in students:
@@ -72,7 +63,6 @@ def search_by_grade(grade):
             found=True
     if not found:
         print("no student with this grade")
-
 
 def subject_topper_report():
     subjects=["python","maths","DBMS","OS"]
@@ -87,25 +77,21 @@ def export_report_card(stu):
     import os
     base_dir = os.path.dirname(os.path.abspath(__file__))
     templates_dir = os.path.join(base_dir, "templates")
-    os.makedirs("templates", exist_ok=True)
-    filename=f"templates/report_{stu['roll']}.txt"
+    os.makedirs(templates_dir, exist_ok=True)
+    filename = os.path.join(templates_dir, f"report_{stu['roll']}.txt")
     with open(filename,"w") as file:
         file.write("===========STUDENT REPORT CARD============\n\n")
         file.write(f"roll no. :{stu['roll']}\n")
         file.write(f"name :{stu['name']}\n")
         file.write(f"class :{stu['class']}\n\n")
-
         file.write("-----------marks-------------")
-
         total=0
         count = 0
         
         for subject, marks in stu["marks"].items():
             file.write(f"{subject}: {marks}\n")
             total += marks
-            count += 1
-        
-        
+            count += 1    
         avg = total / count if count > 0 else 0
         
         file.write("\n-----------------\n")
@@ -137,21 +123,26 @@ def list_students():
 
 
 def save_json():
-    os.makedirs("data", exist_ok=True)
-
-    with open("data/students.json", "w") as f:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(base_dir, "data")
+    os.makedirs(data_dir, exist_ok=True)
+    file_path = os.path.join(data_dir, "students.json")
+    with open(file_path, "w") as f:
         json.dump({"students": students}, f, indent=4)
-
-    print("data saved")
+    print(f"data saved at: {file_path}")
 
 
 def load_json():
     global students
 
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(base_dir, "data")
+    file_path = os.path.join(data_dir, "students.json")
+
     try:
-        with open("data/students.json","r")as f:
-            data=json.load(f)
-            students=data["students"]
+        with open(file_path, "r") as f:
+            data = json.load(f)
+            students = data["students"]
             print("data loaded")
 
     except FileNotFoundError:

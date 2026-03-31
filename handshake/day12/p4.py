@@ -1,8 +1,4 @@
 #Create export_report_card(stu) for text file output
-
-
-
-
 import json
 import os
 students=[]

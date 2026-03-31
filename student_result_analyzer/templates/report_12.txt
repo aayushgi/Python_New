@@ -1,0 +1,15 @@
+===========STUDENT REPORT CARD============
+
+roll no. :12
+name :kalu
+class :12
+
+-----------marks-------------python: 56
+maths: 58
+DBMS: 96
+OS: 45
+
+-----------------
+Total Marks : 255
+Average     : 63.75
+Grade       : B

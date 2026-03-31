@@ -1,0 +1,15 @@
+===========STUDENT REPORT CARD============
+
+roll no. :65
+name :ayush
+class :14
+
+-----------marks-------------python: 56
+maths: 45
+DBMS: 85
+OS: 45
+
+-----------------
+Total Marks : 231
+Average     : 57.75
+Grade       : C
