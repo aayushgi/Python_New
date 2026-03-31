@@ -1,56 +1,73 @@
 
 import json
 import os
+import datetime
 students=[]
+def log_error(error_msg):
+    base_dir = os.path.dirname(os.path.abspath(__file__))   
+    file_path = os.path.join(base_dir, "error_log.txt")  
+    with open("error_log.txt","a") as file:
+        file.write(f"{datetime.datetime.now()}-{error_msg}\n")
 def add_student():
-    roll=input("enter roll number here: ")
-    name=input("enter name here: ")
-    class_name=input("enter class here: ")
-    student={
-        "roll":roll,
-        "name":name,
-        "class":class_name,
-        "marks":{}
-    }
-    students.append(student)
-    print("student added")
+    try:
+        roll=input("enter roll number here: ")
+        name=input("enter name here: ")
+        class_name=input("enter class here: ")
+        student={
+            "roll":roll,
+            "name":name,
+            "class":class_name,
+            "marks":{}
+        }
+        students.append(student)
+        print("student added")
+    except Exception as e:
+        print("error occurred in add_student")
+        log_error(str(e))
 
 def enter_marks():
-    roll=input("enter roll number here:")
-    for s in students:
-        if s.get("roll") == roll:
-            subjects=["python","maths","DBMS","OS"]
-            for sub in subjects:
-                marks=int(input(f"enter marks for every {sub}: "))
-                s["marks"][sub]=marks
-            print("marks added")
-            return
-    print("student not found") 
+    try:
+        roll=input("enter roll number here:")
+        for s in students:
+            if s.get("roll") == roll:
+                subjects=["python","maths","DBMS","OS"]
+                for sub in subjects:
+                    marks=int(input(f"enter marks for every {sub}: "))
+                    s["marks"][sub]=marks
+                print("marks added")
+                return
+        print("student not found") 
+    except Exception as e:
+        print("error occured in enter_marks")
+        log_error(str(e))
 def compute_result():
-    for s in students:
-        total=sum(s["marks"].values())
-        percentage=total/len(s["marks"])   
-        if percentage>=90:
-            grade="A+"
-        elif percentage>=80:
-            grade="A"
+    try:
+        for s in students:
+            total=sum(s["marks"].values())
+            percentage=total/len(s["marks"])   
+            if percentage>=90:
+                grade="A+"
+            elif percentage>=80:
+                grade="A"
 
-        elif percentage>=70:
-            grade="B+"
-        elif percentage>=60:
-            grade="B"
-        elif percentage >= 50:
-            grade = "C"
-        elif percentage >= 40:
-            grade = "D"
-        else:
-            grade = "F"
+            elif percentage>=70:
+                grade="B+"
+            elif percentage>=60:
+                grade="B"
+            elif percentage >= 50:
+                grade = "C"
+            elif percentage >= 40:
+                grade = "D"
+            else:
+                grade = "F"
 
-        s["total"]=total
-        s["percentage"]=percentage
-        s["grade"]=grade
-    print("result calculated")
-
+            s["total"]=total
+            s["percentage"]=percentage
+            s["grade"]=grade
+        print("result calculated")
+    except Exception as e:
+        print("error occured in compute_result")
+        log_error(str(e))
 def search_by_grade(grade):
     found=False
     for s in students:
@@ -123,30 +140,37 @@ def list_students():
 
 
 def save_json():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(base_dir, "data")
-    os.makedirs(data_dir, exist_ok=True)
-    file_path = os.path.join(data_dir, "students.json")
-    with open(file_path, "w") as f:
-        json.dump({"students": students}, f, indent=4)
-    print(f"data saved at: {file_path}")
-
+    try:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(base_dir, "data")
+        os.makedirs(data_dir, exist_ok=True)
+        file_path = os.path.join(data_dir, "students.json")
+        with open(file_path, "w") as f:
+            json.dump({"students": students}, f, indent=4)
+        print(f"data saved at: {file_path}")
+    except Exception as e:
+        print("error occured in compute_result")
+        log_error(str(e))
 
 def load_json():
+    
     global students
-
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(base_dir, "data")
-    file_path = os.path.join(data_dir, "students.json")
-
     try:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(base_dir, "data")
+        file_path = os.path.join(data_dir, "students.json")
+
+        
         with open(file_path, "r") as f:
-            data = json.load(f)
-            students = data["students"]
-            print("data loaded")
+                data = json.load(f)
+                students = data["students"]
+                print("data loaded")
 
     except FileNotFoundError:
         print("file not found")
+    except Exception as e:
+        print("error occured in load_json")
+        log_error(str(e))
 
 def delete_student():
     roll=input("enter roll number you want delete")
