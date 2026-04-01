@@ -1,0 +1,5 @@
+detecting outlires
+histogram:
+refer to the frequency of occurance of variable in an interval
+scatterplot:
+generally used tob find correaltion between two variables here we plot between horsepower and price and we  

@@ -1,0 +1,17 @@
+Retail Sales Dashboard Project
+Objectives:-
+Analyze retail sales data to uncover business insights
+Identify top-performing products, regions, and customers
+Track KPIs (Key Performance Indicators)
+Visualize trends for decision-making
+Build an interactive dashboard
+
+Key Performance Indicators (KPIs)
+Total Revenue
+Total Orders
+Average Order Value (AOV)
+Top Selling Product
+Revenue by Region
+Category-wise Sales
+Monthly Sales Trend
+Customer Segmentation (New vs Regular vs Premium)
