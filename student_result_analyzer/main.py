@@ -2,6 +2,8 @@
 import json
 import os
 import datetime
+import matplotlib.pyplot as plt
+
 students=[]
 def log_error(error_msg):
     base_dir = os.path.dirname(os.path.abspath(__file__))   
@@ -67,6 +69,32 @@ def compute_result():
         print("result calculated")
     except Exception as e:
         print("error occured in compute_result")
+        log_error(str(e))
+
+
+def grade_distribution_chart():
+    try:
+        grade_count={
+            "A+":0,
+            "A":0,
+            "B":0,
+            "C":0,
+            "D":0
+        }
+        for s in students:
+            grade=s.get("grade")
+            if grade:
+                grade_count[grade]+=1
+
+        grade=list(grade_count.keys())
+        counts=list(grade_count.values())
+        plt.bar(grade,counts)
+        plt.title("Grade distributed chart")
+        plt.xlabel("Grade")
+        plt.ylabel("Number of students")
+        plt.show()
+    except Exception as e:
+        print("error occured in grade distributed chart")
         log_error(str(e))
 def search_by_grade(grade):
     found=False
@@ -193,6 +221,7 @@ while True:
     print("8 to find student with their grade")
     print("9 to get subject topper list")
     print("10 to export report card")
+    print("11 to show grade distribution chart")
     print("0 for exit")
 
 
@@ -226,6 +255,9 @@ while True:
                 break
         else:
             print("Student not found")
+    elif choice=="11":
+      grade_distribution_chart()
+
     elif choice=="0":
         break
 
