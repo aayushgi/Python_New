@@ -1,18 +1,18 @@
 {
     "students": [
         {
-            "roll": "13",
-            "name": "adatiya",
+            "roll": "66",
+            "name": "himanshu",
             "class": "12",
             "marks": {
-                "python": 56,
-                "maths": 56,
-                "DBMS": 45,
-                "OS": 56
+                "python": 52,
+                "maths": 25,
+                "DBMS": 36,
+                "OS": 12
             },
-            "total": 213,
-            "percentage": 53.25,
-            "grade": "C"
+            "total": 125,
+            "percentage": 31.25,
+            "grade": "F"
         }
     ]
 }

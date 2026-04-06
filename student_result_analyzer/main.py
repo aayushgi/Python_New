@@ -180,6 +180,22 @@ def save_json():
         print("error occured in compute_result")
         log_error(str(e))
 
+def sort_students():
+    if not students:
+        print("no student avilable to sort")
+        return
+    print("enter 1 to sort by name")
+    print("enter 2 to sort by roll number")
+    choice = input("enter your choice ")
+    if choice==1:
+        students.sort(key=lambda x:x["name"].lower())
+        print("students sorted by name")
+    elif choice==2:
+        students.sort(key=lambda x:x["roll"])
+        print("students sorted by roll number")
+    else:
+        print("invalid input")
+
 def load_json():
     
     global students
@@ -222,6 +238,7 @@ while True:
     print("9 to get subject topper list")
     print("10 to export report card")
     print("11 to show grade distribution chart")
+    print("12 to sort the students")
     print("0 for exit")
 
 
@@ -257,6 +274,9 @@ while True:
             print("Student not found")
     elif choice=="11":
       grade_distribution_chart()
+
+    elif choice=="12":
+        sort_students()
 
     elif choice=="0":
         break

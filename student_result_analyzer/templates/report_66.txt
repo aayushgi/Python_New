@@ -4,12 +4,12 @@ roll no. :66
 name :himanshu
 class :12
 
------------marks-------------python: 56
-maths: 45
+-----------marks-------------python: 52
+maths: 25
 DBMS: 36
-OS: 63
+OS: 12
 
 -----------------
-Total Marks : 200
-Average     : 50.00
-Grade       : C
+Total Marks : 125
+Average     : 31.25
+Grade       : F
