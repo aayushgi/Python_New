@@ -1,0 +1,39 @@
+Programming Language:-
+->Programming Language provides raw material for software development
+->Programming Language provides syntaxes(rules) and semantics for software development
+->C,C++,Python, Java etc.
+------------------------------------------------------------------------------------------------------------
+Software Technology:- Software Technology are non-installable software, but the software developed by using software technology are installable 
+Software Technology are two types:-
+1.Open Source Technology:-Source code of open source technology is available for user. user can make changes in open source technology code.
+2.Closed Source Technology:-Source code of closed  source technology is not available for user . User can not modify code.
+--------------------------------------------------------------------------------------------------------------
+Framework:-Framework are installable software they provide us pre-designed architecture. By using frame-work you can develop software application more easily. If u develop software by using software technology then you need to write common and specific code both .And if you develop software by using framework then you need to write specific code only , framework take care of common code.
+Python:-Django, Flask, Scikit-learn, TensorFlow, Keras, Theano etc
+Java:-Spring, Spring Boot, Struts, Hibernate, JSF(JAVA SERVER FACES)
+PHP:-Laravel, CodeIgniter,CakePHP
+.Net=MVC Framework, Xamrine Framework
+---------------------------------------------------------------------------------------------------------
+Django:-Written in powerful python prohramming language. Django Framework is was developed by Adrian Holovaty
+and simon Willison in year 2003 Djanfo framework follow MVT architecture 
+
+->django-admin startproject dsproject
+->python manage.py startapp mainapp
+
+How to add template in your app?
+1.First create a folder in mainapp with name templates and add a new html file with name 'index.html' in templates folder 
+
+After creation of model we need to execute the commands:-
+
+python manage.py makemigrations
+python manage.py migrate
+
+
+command to create superuser for Django
+py manage.py createsuperuser
+username:admin
+password: admin@0000
+
+
+run the project python manage.py runserver
+

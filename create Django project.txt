@@ -1,0 +1,13 @@
+create Django project
+dajango-admin startproject
+for stop the project ctrl+c
+for run the project py manage.py runserver
+ 
+Commond to create app in Django project:-
+
+python manage.py startapp mainapp
+
+How to app template in your app?
+
+
+1. Create a folder in main app with name templates and add a new html file with name index.html in templates folder
