@@ -1,0 +1,5 @@
+machine laearning
+            superwised 
+            unsuperwised
+            reinforcment
+superwised ML
