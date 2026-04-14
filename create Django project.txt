@@ -1,11 +1,22 @@
 create Django project
-dajango-admin startproject
-for stop the project ctrl+c
-for run the project py manage.py runserver
- 
-Commond to create app in Django project:-
+1.dajango-admin startproject
 
-python manage.py startapp mainapp
+	project structure
+myproject/
+    manage.py
+    myproject/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+2.for stop the project ctrl+c
+
+3.for run the project py manage.py runserver
+ 
+4.Commond to create app in Django project:-
+
+	python manage.py startapp mainapp
 
 How to app template in your app?
 

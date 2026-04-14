@@ -7,7 +7,7 @@ def search(list1,n):
 	for i in range(len(list1)):
 		if list1[i]==n:
 			return i
-	return False
+	return Falses
 numbers=[]
 print("enter the numbers here: ")
 for i in range(10):

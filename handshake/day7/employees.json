@@ -1,0 +1,21 @@
+{
+    "employees":[
+        {
+            "name":"rahul",
+            "empid":102,
+            "empsal":80000
+        },
+        {
+            
+            "name":"manoj",
+            "empid":104,
+            "empsal":70000
+        },
+        {
+        
+            "name":"shyam",
+            "empid":108,
+            "empsal":50000
+        }
+    ]
+}

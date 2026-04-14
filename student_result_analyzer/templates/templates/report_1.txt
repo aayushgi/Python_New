@@ -1,0 +1,15 @@
+===========STUDENT REPORT CARD============
+
+roll no. :1
+name :anurag
+class :14
+
+-----------marks-------------python: 56
+maths: 56
+DBMS: 45
+OS: 56
+
+-----------------
+Total Marks : 213
+Average     : 53.25
+Grade       : C

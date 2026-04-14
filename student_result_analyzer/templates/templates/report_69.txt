@@ -1,0 +1,15 @@
+===========STUDENT REPORT CARD============
+
+roll no. :69
+name :jigyasha
+class :14
+
+-----------marks-------------python: 56
+maths: 89
+DBMS: 42
+OS: 36
+
+-----------------
+Total Marks : 223
+Average     : 55.75
+Grade       : C
