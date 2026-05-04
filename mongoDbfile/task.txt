@@ -1,0 +1,40 @@
+db.employee.insertMany([
+    {empid:101,name:'amit',dept:'IT',salary:50000,city:'lucknow',age:25},
+    {empid:102,name:'rohit',dept:'HR',salary:40000,city:'delhi',age:23},
+    {empid:103,name:'neha',dept:'IT',salary:60000,city:'mumbai',age:27},
+    {empid:104,name:'pooja',dept:'Finance',salary:55000,city:'lucknow',age:20},
+    {empid:105,name:'vikas',dept:'HR',salary:45000,city:'delhi',age:25},
+    {empid:106,name:'ankit',dept:'IT',salary:38000,city:'lucknow',age:21},
+    {empid:107,name:'akansha',dept:'Finance',salary:50000,city:'mumbai',age:28}
+])
+
+
+
+1:
+db.employee.insertOne({empid:108,name:'aryan',dept:'IT',salary:42000,city:'mumbai',age:32});
+
+2:
+db.employee.insertMany([
+ {empid:109,name:'vikram',dept:'marketing',salary:45000,city:'delhi',age:25},
+    {empid:110,name:'anoo',dept:'marketing',salary:38000,city:'lucknow',age:21},
+    {empid:111,name:'aknusha',dept:'marketing',salary:50000,city:'mumbai',age:28}
+])
+
+3:
+ db.employee.insertOne({empid:111,name:'aknusha',dept:'sales',salary:50000,city:'mumbai',age:28})
+
+4:
+db.employee.insertOne({empid:111,name:'aknusha',dept:'sales',city:'mumbai',age:28})
+
+5:
+db.employee.find()
+
+6:
+db.employee.find({dept:'IT'})
+
+7:
+db.employee.find({city:'lucknow'})
+
+
+8: 
+db.employee.find({salary:{$gt:50000}});

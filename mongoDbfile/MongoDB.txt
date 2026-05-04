@@ -1,0 +1,38 @@
+                             MongoDB
+insert a record in collection
+db.empinfo.insertOne({empid:1001,empname:'ayush',department:'HR',salary:500000});
+insertmany
+db.empinfo.insertMany([
+  {empid:1002,empname:'adarsh',departemnt:'cse',salary:90000}
+])
+search 
+db.empinfo.find({empid:1001})
+
+query operator
+comparision
+db.students.find.({age:{$gt:20}})
+operator                             meaning
+$gt                                grater than
+$lt                                less than
+$gte                               grater than or equal to
+$lte                               less than or equal to
+
+search salary grater than or equal to 50000
+db.empinfo.find({salary:{$gt:50000}})
+db.empinfo.find({salary:{$lt:50000}})
+
+update record
+db.empinfo.updateOne(
+  {empid:1001},
+  {$set:{salary:4000}}
+)
+
+
+delete record
+db.empinfo.deleteOne({empid:1002});
+
+delete many record
+db.empinfo.deletemany({departemnt:'HR'})
+
+drop entire collection
+db.empinfo.drop();
