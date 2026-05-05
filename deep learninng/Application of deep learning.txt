@@ -1,0 +1,25 @@
+Application of deep learning
+1.face recognition biometric system
+2. speech recognition 
+3. machine translation
+4. self driving cars
+5. medical image analysis and disease detection
+6. recommendation system
+7. fraud detection
+8. document and handwriting recognition
+9. industrial robots and automation
+10. generative AI (text, image, music creation ') 
+
+python frameworks
+1.tenserflow
+created by google
+for both industry and research
+good for large, complex deep learning model
+2.keras
+runs on top of tenserflow
+build deep leaning model with few lines 
+best for beginner
+3.pyTorch
+created by facebook
+popular for research/flexible
+easy to understand with new model ideas
