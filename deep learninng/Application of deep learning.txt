@@ -15,11 +15,15 @@ python frameworks
 created by google
 for both industry and research
 good for large, complex deep learning model
+
+
 2.keras
 runs on top of tenserflow
 build deep leaning model with few lines 
 best for beginner
 3.pyTorch
+
+
 created by facebook
 popular for research/flexible
 easy to understand with new model ideas
