@@ -15,7 +15,7 @@ python frameworks
 created by google
 for both industry and research
 good for large, complex deep learning model
-
+installed by pip intall tenserfolw
 
 2.keras
 runs on top of tenserflow
