@@ -1,0 +1,5 @@
+linear regression
+lasso/ ridge / elasticNet
+evaluation matrics
+feature engineering
+bias variance tradeoff(important for DS and ML engineer for interview)
