@@ -1,5 +1,7 @@
 machine laearning
            1. superwised (linear regression)
+           
             2. unsuperwised
+
             3.reinforcment
 superwised ML
