@@ -5,3 +5,4 @@ machine laearning
 
             3.reinforcment
 superwised ML
+learn data from the training dataset
