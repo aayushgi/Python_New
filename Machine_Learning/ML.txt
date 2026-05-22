@@ -4,5 +4,3 @@ machine laearning
             2. unsuperwised
 
             3.reinforcment
-superwised ML
-
