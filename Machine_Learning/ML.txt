@@ -4,3 +4,8 @@ machine laearning
             2. unsuperwised
 
             3.reinforcment
+
+
+-----------------------------------------------------------------
+GridSearchCV
+.knn use accuracy score for scroing best parameter
