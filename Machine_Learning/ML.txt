@@ -14,3 +14,6 @@ GridSearchCV
 29/may/2026
 kNN(k nearest neighbours)
 .classifiction and regression
+.frist we chose k value (hyper parameter)
+.generally we choose odd value of k 
+.distance calculate karte hai from all the data points
