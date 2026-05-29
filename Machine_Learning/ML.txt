@@ -17,3 +17,6 @@ kNN(k nearest neighbours)
 .frist we chose k value (hyper parameter)
 .generally we choose odd value of k 
 .distance calculate karte hai from all the data points
+. in case of classification we go with the mejority
+. in the case of regression we calculating the mean value or average value for k neighour
+.it is also called a lazy learner algorithm
