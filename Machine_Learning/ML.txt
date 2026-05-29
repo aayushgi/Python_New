@@ -1,4 +1,4 @@
-machine laearning
+/\machine laearning
            1. superwised (linear regression)
            
             2. unsuperwised
@@ -9,3 +9,8 @@ machine laearning
 -----------------------------------------------------------------
 GridSearchCV
 .knn use accuracy score for scroing best parameter
+
+
+29/may/2026
+kNN(k nearest neighbours)
+.classifiction and regression
