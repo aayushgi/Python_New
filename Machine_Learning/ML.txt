@@ -32,3 +32,4 @@ cross validation
 .k times itteration s kater hai taki har process me k ke liye validate ho jaye 
 .best most optimal model is the average of the all itteration  
 .we are mostely using the cross validation for hyper parameter turing
+.we are using GridSearchCV for hyper parameter
