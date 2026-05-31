@@ -21,3 +21,7 @@ kNN(k nearest neighbours)
 . in the case of regression we calculating the mean value or average value for k neighour
 .it is also called a lazy learner algorithm
 .data scaling is the most important part of the knn because we are calculating actual distance between the points
+
+
+30/may/2026
+cross validation 
