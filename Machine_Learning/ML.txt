@@ -23,5 +23,12 @@ kNN(k nearest neighbours)
 .data scaling is the most important part of the knn because we are calculating actual distance between the points
 
 
-30/may/2026
+31/may/2026
 cross validation 
+.we are get the validation data from our train dataset
+.bar batr same cheez kar ke figureout kar sake kis value per hamara model best perform kar raha hai
+
+.we are mostly use k-fload cross validation
+.k times itteration s kater hai taki har process me k ke liye validate ho jaye 
+.best most optimal model is the average of the all itteration  
+.we are mostely using the cross validation for hyper parameter turing
