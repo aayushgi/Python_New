@@ -1,0 +1,3 @@
+this project is about the credit wise loan system in this we will approving the loan for those who will nfullfill the conditions
+.simpleimputer 
+    handle the missing values with simple stratagies
