@@ -9,3 +9,8 @@ Exploratory Data Analysis
     Analyze Data Distribution
     Find Relationships Between Variables
     Detect Duplicate Records
+
+
+Encoding
+    1.LableEncoder(convert into binary number like male=1, female=0,used of ordinal data(jaha per data order me ho))
+    2.OneHotEncoder(create bimnary colun for every data(nominal data(jis data ka order na ho)))
