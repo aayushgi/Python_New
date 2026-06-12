@@ -19,3 +19,5 @@ Encoding
 
 correlation heatmap
 visual representaion between the the numerical Variables   and the dataset 
+jitna jada postive values utna jadfda positive correlation
+jitna jadaa negative values utna jada negative correlation
