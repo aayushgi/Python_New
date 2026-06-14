@@ -21,3 +21,14 @@ correlation heatmap
 visual representaion between the the numerical Variables   and the dataset 
 jitna jada postive values utna jadfda positive correlation
 jitna jadaa negative values utna jada negative correlation
+
+
+
+trainig and evaluate the model
+we have to reducing the false positive(for this we are using the precision)
+on the second number we give the priority to our reaclll
+because it focus on "hamne kitne ache costumer ko lose kar diya hai"
+
+
+best model after applying the multiple models (knn,logistic regression , naive bayse models)
+    best model is the naive bayse because it have highest precision score
