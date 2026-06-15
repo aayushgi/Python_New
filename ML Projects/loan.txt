@@ -36,5 +36,11 @@ model evaluatation
   precision score for the knn is 67.5
   precision score for the naive bayse is 80.35
 
+
+according to the ranking the best model for the prediction is the
+                                                        1.naive bayse
+                                                        2.logistic regression(difference is 2)
+                                                        3.KNN(difference is 8.7 something)
+
 best model after applying the multiple models (knn,logistic regression , naive bayse models)
     best model is the naive bayse because it have highest precision score
