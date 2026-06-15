@@ -30,5 +30,11 @@ on the second number we give the priority to our reaclll
 because it focus on "hamne kitne ache costumer ko lose kar diya hai"
 
 
+
+model evaluatation
+  precision score for the logistic regression is  78.3
+  precision score for the knn is 67.5
+  precision score for the naive bayse is 80.35
+
 best model after applying the multiple models (knn,logistic regression , naive bayse models)
     best model is the naive bayse because it have highest precision score
