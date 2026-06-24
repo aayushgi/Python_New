@@ -1,5 +1,5 @@
-a=int(input("enter frist number here "))
-b=int(input("enter second number here    "))
+a=float(input("enter frist number here "))
+b=float(input("enter second number here    "))
 print("sum =",a+b)
 print("subtraction =",a-b)
 print("multiplication =",a**b)

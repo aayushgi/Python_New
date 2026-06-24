@@ -1,5 +1,5 @@
-a=int(input("enter frist number here "))
-b=int(input("enter second number here    "))
+a=eval(input("enter frist number here "))
+b=eval(input("enter second number here    "))
 print("sum =",a+b)
 print("subtraction =",a-b)
 print("multiplication =",a**b)

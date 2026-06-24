@@ -1,0 +1,6 @@
+#Write a python program to find volume and surface area of cuboid. v=l*b*h sa=2*(l*b+b*h+h*l) 
+l=int(input("enter length here: "))
+b=int(input("enter breath here: "))
+h=int(input("enter height here: "))
+print("volume of cuboid: ",l*b*h)
+print("surface area of cuboid: ",2*((l*b)+(b*h)+(h*l)))
